@@ -3,6 +3,7 @@ package chans.procrastinationbot.service;
 import chans.procrastinationbot.domain.dto.UserInfoDto;
 import chans.procrastinationbot.repository.UserCredentialsRepository;
 import chans.procrastinationbot.repository.UserUsageRepository;
+import chans.procrastinationbot.repository.entinties.UserUsageEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -27,7 +28,7 @@ public class ProcrastinationBotServiceImpl implements ProcrastinationBotService 
         else
             System.out.println("No user found");
 
-        //userUsageRepository.save()
+        //userUsageRepository.save(new UserUsageEntity());
         return false;
     }
 }

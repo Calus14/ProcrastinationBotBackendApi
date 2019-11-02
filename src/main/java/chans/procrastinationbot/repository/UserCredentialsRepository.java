@@ -14,5 +14,5 @@ import java.util.UUID;
 public interface UserCredentialsRepository  extends CrudRepository<UserCredentialsEntity, UUID>{
 
     @Query(nativeQuery = true, value = "SELECT EXISTS ( SELECT * from userCredentials where user_unique_id = :userUniqueId)")
-    boolean userCredentialsExistById(@Param("targetPersonID") UUID userUniqueId);
+    boolean userCredentialsExistById(@Param("userUniqueId") UUID userUniqueId);
 }

@@ -19,6 +19,6 @@ public class UserCredentialsEntity {
     @Column(name = "user_name", nullable = false, unique = true)
     private String userName;
 
-    @Column(name = "user_name", nullable = false)
+    @Column(name = "user_password", nullable = false)
     private String userPassword;
 }

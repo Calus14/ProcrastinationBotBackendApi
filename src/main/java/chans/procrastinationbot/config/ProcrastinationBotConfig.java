@@ -8,13 +8,12 @@ import javax.annotation.PostConstruct;
 
 @Configuration
 @RequiredArgsConstructor
-@EnableJpaRepositories
 public class ProcrastinationBotConfig {
 
 
     @PostConstruct
     public void postConstruct() {
-        for(int i = 0; i < 100; i++)
+        for(int i = 0; i < 10; i++)
         System.out.println("HELELELAJSDLFJASLDJFJLASDFJASDFJL");
     }
 
